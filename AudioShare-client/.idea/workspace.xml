@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f234441-252c-485f-9c18-c2548d97dbbc" name="Default Changelist" comment="Modifications in UserImpl &#10;Implementation of AudioShareApp">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2f234441-252c-485f-9c18-c2548d97dbbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensibs/audioshare/AudioShareApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensibs/audioshare/AudioShareApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensibs/audioshare/UserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensibs/audioshare/UserImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AudioShare-server/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AudioShare-server/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AudioShare-server/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AudioShare-server/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AudioShare-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AudioShare-server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AudioShare-server/AudioShare-server.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../joram-admin/joram-admin.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../joram-server/joram-server.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +52,16 @@
       <updated>1583319792893</updated>
       <workItem from="1583319796944" duration="121000" />
       <workItem from="1584030073084" duration="236000" />
-      <workItem from="1584030505627" duration="456000" />
+      <workItem from="1584030505627" duration="711000" />
     </task>
+    <task id="LOCAL-00001" summary="Modifications in UserImpl &#10;Implementation of AudioShareApp">
+      <created>1584030999565</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584030999565</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,10 +76,10 @@
       <screen x="67" y="27" width="1853" height="988" />
     </state>
     <state x="608" y="380" width="761" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/67.27.1853.988@67.27.1853.988" timestamp="1584030587081" />
-    <state x="472" y="64" width="1032" height="912" key="CommitChangelistDialog2" timestamp="1584030962179">
+    <state x="472" y="64" width="1032" height="912" key="CommitChangelistDialog2" timestamp="1584030999398">
       <screen x="67" y="27" width="1853" height="988" />
     </state>
-    <state x="472" y="64" width="1032" height="912" key="CommitChangelistDialog2/67.27.1853.988@67.27.1853.988" timestamp="1584030962179" />
+    <state x="472" y="64" width="1032" height="912" key="CommitChangelistDialog2/67.27.1853.988@67.27.1853.988" timestamp="1584030999398" />
     <state x="771" y="209" width="424" height="621" key="FileChooserDialogImpl" timestamp="1584030196149">
       <screen x="67" y="27" width="1853" height="988" />
     </state>
@@ -95,6 +92,14 @@
       <screen x="67" y="27" width="1853" height="988" />
     </state>
     <state x="476" y="97" width="1024" height="845" key="SettingsEditor/67.27.1853.988@67.27.1853.988" timestamp="1584030153850" />
+    <state x="588" y="244" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1584031010805">
+      <screen x="67" y="27" width="1853" height="988" />
+    </state>
+    <state x="588" y="244" width="800" height="551" key="Vcs.Push.Dialog.v2/67.27.1853.988@67.27.1853.988" timestamp="1584031010805" />
+    <state x="761" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584031217998">
+      <screen x="67" y="27" width="1853" height="988" />
+    </state>
+    <state x="761" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.988@67.27.1853.988" timestamp="1584031217998" />
     <state x="302" y="189" width="1372" height="683" key="new project wizard" timestamp="1583319914590">
       <screen x="67" y="27" width="1853" height="1009" />
     </state>

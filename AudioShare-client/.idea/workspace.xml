@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f234441-252c-485f-9c18-c2548d97dbbc" name="Default Changelist" comment="" />
+    <list default="true" id="2f234441-252c-485f-9c18-c2548d97dbbc" name="Default Changelist" comment="Modifications in UserImpl &#10;Implementation of AudioShareApp">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensibs/audioshare/AudioShareApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensibs/audioshare/AudioShareApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensibs/audioshare/UserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensibs/audioshare/UserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AudioShare-server/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AudioShare-server/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AudioShare-server/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AudioShare-server/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AudioShare-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AudioShare-server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AudioShare-server/AudioShare-server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joram-admin/joram-admin.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../joram-server/joram-server.iml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Aayuuna &lt;balze.anais@outlook.fr&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1Yf3OtzhmhWovqsoHivEe21IRDT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -17,6 +46,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -29,13 +62,39 @@
       <option name="presentableId" value="Default" />
       <updated>1583319792893</updated>
       <workItem from="1583319796944" duration="121000" />
+      <workItem from="1584030073084" duration="236000" />
+      <workItem from="1584030505627" duration="456000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Modifications in UserImpl &#10;Implementation of AudioShareApp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifications in UserImpl &#10;Implementation of AudioShareApp" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="608" y="380" width="761" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1584030587081">
+      <screen x="67" y="27" width="1853" height="988" />
+    </state>
+    <state x="608" y="380" width="761" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/67.27.1853.988@67.27.1853.988" timestamp="1584030587081" />
+    <state x="472" y="64" width="1032" height="912" key="CommitChangelistDialog2" timestamp="1584030962179">
+      <screen x="67" y="27" width="1853" height="988" />
+    </state>
+    <state x="472" y="64" width="1032" height="912" key="CommitChangelistDialog2/67.27.1853.988@67.27.1853.988" timestamp="1584030962179" />
+    <state x="771" y="209" width="424" height="621" key="FileChooserDialogImpl" timestamp="1584030196149">
+      <screen x="67" y="27" width="1853" height="988" />
+    </state>
+    <state x="771" y="209" width="424" height="621" key="FileChooserDialogImpl/67.27.1853.988@67.27.1853.988" timestamp="1584030196149" />
+    <state x="573" y="174" width="819" height="691" key="NewModule_or_Project.wizard" timestamp="1584030150059">
+      <screen x="67" y="27" width="1853" height="988" />
+    </state>
+    <state x="573" y="174" width="819" height="691" key="NewModule_or_Project.wizard/67.27.1853.988@67.27.1853.988" timestamp="1584030150059" />
+    <state x="476" y="97" width="1024" height="845" key="SettingsEditor" timestamp="1584030153850">
+      <screen x="67" y="27" width="1853" height="988" />
+    </state>
+    <state x="476" y="97" width="1024" height="845" key="SettingsEditor/67.27.1853.988@67.27.1853.988" timestamp="1584030153850" />
     <state x="302" y="189" width="1372" height="683" key="new project wizard" timestamp="1583319914590">
       <screen x="67" y="27" width="1853" height="1009" />
     </state>

@@ -1,9 +1,6 @@
 package fr.ensibs.audioshare;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.ObjectInputStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -74,6 +71,21 @@ public class UserImpl implements User {
             } catch (Exception e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    /**
+     * Save the user tags and photos to the user.bak file in the user directory
+     */
+    public void saveUser()
+    {
+        File file = new File(this.dir, "user.bak");
+        try (ObjectOutputStream out = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(file)))) {
+            out.writeObject(this.tags);
+            out.writeObject(this.sharedMusics);
+            out.writeObject(this.receivedMusics);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

@@ -7,6 +7,21 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1Yf3eJQ4Qbd0VmWhtF5WsEJ6JFh" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -17,8 +32,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../joram-admin" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -33,6 +48,9 @@
       <option name="presentableId" value="Default" />
       <updated>1583319914643</updated>
       <workItem from="1583319919539" duration="948000" />
+      <workItem from="1583739382315" duration="2055000" />
+      <workItem from="1583743122770" duration="2367000" />
+      <workItem from="1583759972311" duration="90000" />
     </task>
     <servers />
   </component>
@@ -40,17 +58,32 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="771" y="220" width="424" height="621" key="FileChooserDialogImpl" timestamp="1583320033180">
-      <screen x="67" y="27" width="1853" height="1009" />
+    <state x="333" y="240" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1583744656285">
+      <screen x="67" y="27" width="1853" height="988" />
+    </state>
+    <state x="333" y="240" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1853.988@67.27.1853.988" timestamp="1583744656285" />
+    <state x="596" y="189" width="784" height="661" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1583739721978">
+      <screen x="67" y="27" width="1853" height="988" />
+    </state>
+    <state x="596" y="189" width="784" height="661" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/67.27.1853.988@67.27.1853.988" timestamp="1583739721978" />
+    <state x="771" y="216" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583742210086">
+      <screen x="67" y="27" width="1853" height="988" />
     </state>
     <state x="771" y="220" width="424" height="621" key="FileChooserDialogImpl/67.27.1853.1009@67.27.1853.1009" timestamp="1583320033180" />
-    <state x="573" y="185" width="819" height="691" key="NewModule_or_Project.wizard" timestamp="1583320034778">
-      <screen x="67" y="27" width="1853" height="1009" />
+    <state x="771" y="216" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.988@67.27.1853.988" timestamp="1583742210086" />
+    <state x="67" y="179" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1583743224846">
+      <screen x="67" y="27" width="1853" height="988" />
+    </state>
+    <state x="67" y="179" width="924" height="684" key="Maven.ArtifactSearchDialog/67.27.1853.988@67.27.1853.988" timestamp="1583743224846" />
+    <state x="573" y="182" width="819" height="691" key="NewModule_or_Project.wizard" timestamp="1583739427574">
+      <screen x="67" y="27" width="1853" height="988" />
     </state>
     <state x="573" y="185" width="819" height="691" key="NewModule_or_Project.wizard/67.27.1853.1009@67.27.1853.1009" timestamp="1583320034778" />
-    <state x="476" y="108" width="1024" height="845" key="SettingsEditor" timestamp="1583320037920">
-      <screen x="67" y="27" width="1853" height="1009" />
+    <state x="573" y="182" key="NewModule_or_Project.wizard/67.27.1853.988@67.27.1853.988" timestamp="1583739427574" />
+    <state x="476" y="106" width="1024" height="845" key="SettingsEditor" timestamp="1583743086758">
+      <screen x="67" y="27" width="1853" height="988" />
     </state>
     <state x="476" y="108" width="1024" height="845" key="SettingsEditor/67.27.1853.1009@67.27.1853.1009" timestamp="1583320037920" />
+    <state x="476" y="106" width="1024" height="845" key="SettingsEditor/67.27.1853.988@67.27.1853.988" timestamp="1583743086758" />
   </component>
 </project>

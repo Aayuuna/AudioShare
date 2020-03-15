@@ -129,7 +129,7 @@ public class AudioShareApp {
     public void share(File file, Properties tags)
     {
         /*if (file.isFile()) {
-            Music music = new MusicImpl(file, tags, this.user.getName());
+            Music music = new DefaultMusic(file, tags, this.user.getName());
             boolean success = this.user.share(music);
             if (success) {
                 System.out.println(music + " has been shared");

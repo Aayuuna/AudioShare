@@ -62,7 +62,7 @@ public class AudioShareMessenger {
     public void send(Music music) throws Exception
     {
         BytesMessage message = this.session.createBytesMessage();
-        /*try (FileInputStream in = new FileInputStream(music.getFile())) {
+        try (FileInputStream in = new FileInputStream(music.getFile())) {
             byte[] data = new byte[in.available()];
             in.read(data);
             message.writeBytes(data);
@@ -72,7 +72,7 @@ public class AudioShareMessenger {
         Properties tags = music.getTags();
         for (String key : tags.stringPropertyNames()) {
             message.setStringProperty(key, tags.getProperty(key));
-        }*/
+        }
         this.sender.send(this.destination, message);
     }
 

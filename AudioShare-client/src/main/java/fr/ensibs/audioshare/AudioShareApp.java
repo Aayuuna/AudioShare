@@ -2,7 +2,6 @@ package fr.ensibs.audioshare;
 
 import java.io.File;
 import java.util.Properties;
-import java.util.Scanner;
 
 public class AudioShareApp {
 
@@ -60,40 +59,38 @@ public class AudioShareApp {
      */
     public void run()
     {
-        System.out.println("Hello, " + this.user.getName() + ". Enter commands:"
+        String help = "Enter commands:"
                 + "\n PLAY <id>                             to play a music"
                 + "\n LIKE <id>                             to like a music"
                 + "\n DISLIKE <id>                          to dislike a music"
-                + "\n SHARE-P <filename> <genre>            to share a new music on the topic"
+                + "\n SHARE-P <filename> genre=<genre>            to share a new music on the topic"
                 + "\n SHARE-D <filename> <pseudo_receiver>  to send a new music directly to someone in particular"
                 + "\n FILTER <tags>                         to specify the musics you are interested in"
-                + "\n where <tags> is a list of tags in the form \"key1=value1 key2=value2\""
+                + "\n where <tags> is a list of tags in the form genre=value1 genre=value2"
                 + "\n HELP                                  display this help to use the app"
-                + "\n QUIT                                  to quit the application");
+                + "\n QUIT                                  to quit the application";
+
+        System.out.println("Hello, " + this.user.getName() + ". " + help);
 
         Scanner scanner = new Scanner(System.in);
         String line = scanner.nextLine();
         while (!line.equals("quit") && !line.equals("QUIT")) {
             String[] command = line.split(" +");
             switch (command[0]) {
-                case "play":
-                case "PLAY":
-                    break;
-                case "like":
-                case "LIKE":
-                    break;
-                case "dislike":
-                case "DISLIKE":
-                    break;
-                case "share-d":
-                case "SHARE-D":
-                    break;
+                // case "play":
+                // case "PLAY":
+                //     break;
+                // case "like":
+                // case "LIKE":
+                //     break;
+                // case "dislike":
+                // case "DISLIKE":
+                //     break;
+                // case "share-d":
+                // case "SHARE-D":
+                //     break;
                 case "share-p":
                 case "SHARE-P":
-                    break;
-
-                /*case "share":
-                case "SHARE":
                     if (command.length >= 2) {
                         File file = new File(this.user.getDirectory(), command[1]);
                         Properties tags = parseTags(command, 2);
@@ -101,7 +98,7 @@ public class AudioShareApp {
                     } else {
                         System.err.println("Usage: share <filename> <tags>");
                     }
-                    break;*/
+                    break;
 
                 case "filter":
                 case "FILTER":
@@ -109,6 +106,7 @@ public class AudioShareApp {
                     break;
                 case "help":
                 case "HELP":
+                    System.out.println("\n" + help);
                     break;
 
                 default:
@@ -128,7 +126,7 @@ public class AudioShareApp {
      */
     public void share(File file, Properties tags)
     {
-        /*if (file.isFile()) {
+        if (file.isFile()) {
             Music music = new DefaultMusic(file, tags, this.user.getName());
             boolean success = this.user.share(music);
             if (success) {
@@ -136,7 +134,7 @@ public class AudioShareApp {
             }
         } else {
             System.err.println("File " + file.getAbsolutePath() + " not found");
-        }*/
+        }
     }
 
     /**

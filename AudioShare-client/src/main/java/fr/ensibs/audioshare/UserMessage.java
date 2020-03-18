@@ -75,9 +75,9 @@ public class UserMessage extends UserImpl {
                 out.write(data);
             }
 
-            // create a photo and add it to the received photos
-            //MusicImpl music = new MusicImpl(file, tags, owner);
-            //super.receive(music);
+            // create a music and add it to the received musics
+            DefaultMusic music = new DefaultMusic(file, tags, owner);
+            super.receive(music);
         } catch (Exception e) {
             e.printStackTrace();
         }

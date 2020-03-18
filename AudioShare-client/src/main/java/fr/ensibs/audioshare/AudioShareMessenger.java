@@ -85,7 +85,7 @@ public class AudioShareMessenger {
         if (this.receiver != null) {
             this.receiver.close();
         }
-        JMSContext consumerSession = session.createContext(JMSContext.AUTO_ACKNOWLEDGE);
+        JMSContext consumerSession = session.createContext(JMSContext.CLIENT_ACKNOWLEDGE);
         String selector = makeSelector(tags);
         if (selector != null) {
             this.receiver = consumerSession.createConsumer(destination, selector);

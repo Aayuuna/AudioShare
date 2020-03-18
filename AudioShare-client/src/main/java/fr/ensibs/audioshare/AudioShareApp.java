@@ -1,13 +1,19 @@
 package fr.ensibs.audioshare;
 
-import java.io.File;
+import java.io.*;
 import java.util.Properties;
+import java.util.Scanner;
+import java.lang.Thread;
+
+import javazoom.jl.player.*;
 
 public class AudioShareApp {
 
     private final UserImpl user;
 
     private AudioShareMessenger messenger;
+
+    private Thread player;
 
     /**
      * Print a usage message and exit
@@ -57,12 +63,13 @@ public class AudioShareApp {
     /**
      * Launch the application process that executes user commands: SHARE, FILTER
      */
-    public void run()
+    public void run() throws Exception
     {
         String help = "Enter commands:"
-                + "\n PLAY <id>                             to play a music"
-                + "\n LIKE <id>                             to like a music"
-                + "\n DISLIKE <id>                          to dislike a music"
+                + "\n PLAY <filename>                             to play a music"
+                + "\n STOP                                        to stop music playback"
+                + "\n LIKE <filename>                             to like a music"
+                + "\n DISLIKE <filename>                          to dislike a music"
                 + "\n SHARE-P <filename> genre=<genre>            to share a new music on the topic"
                 + "\n SHARE-D <filename> <pseudo_receiver>  to send a new music directly to someone in particular"
                 + "\n FILTER <tags>                         to specify the musics you are interested in"
@@ -77,9 +84,38 @@ public class AudioShareApp {
         while (!line.equals("quit") && !line.equals("QUIT")) {
             String[] command = line.split(" +");
             switch (command[0]) {
-                // case "play":
-                // case "PLAY":
-                //     break;
+                case "play":
+                case "PLAY":
+                if (command.length == 2) {
+                    File file = new File(this.user.getDirectory(), command[1]);
+                    player = new Thread( new Runnable(){
+
+                        Player back;
+
+                        @Override
+                        public void run(){
+                            try {
+                                back = new Player(new FileInputStream(file));
+                                back.play();
+                            } catch (Exception e) {
+                                //TODO: handle exception
+                            }
+                        }
+                        
+                        public void stop(){
+                            back.close();
+                        }
+                    });
+                    player.start();
+
+                }
+                    break;
+                
+                case "STOP":
+                case "stop":
+                    player.stop();
+                break;
+
                 // case "like":
                 // case "LIKE":
                 //     break;

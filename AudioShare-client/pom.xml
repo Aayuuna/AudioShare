@@ -31,11 +31,11 @@
             <artifactId>jndi-client</artifactId>
             <version>5.16.0</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/javax.media/jmf -->
+        <!-- https://mvnrepository.com/artifact/com.googlecode.soundlibs/jlayer -->
         <dependency>
-            <groupId>javax.media</groupId>
-            <artifactId>jmf</artifactId>
-            <version>2.1.1e</version>
+            <groupId>com.googlecode.soundlibs</groupId>
+            <artifactId>jlayer</artifactId>
+            <version>1.0.1.4</version>
         </dependency>
     </dependencies>
 

@@ -78,6 +78,7 @@ public class UserMessage extends UserImpl {
             // create a music and add it to the received musics
             DefaultMusic music = new DefaultMusic(file, tags, owner);
             super.receive(music);
+            message.acknowledge();
         } catch (Exception e) {
             e.printStackTrace();
         }

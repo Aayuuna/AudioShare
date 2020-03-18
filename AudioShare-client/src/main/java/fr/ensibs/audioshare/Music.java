@@ -26,4 +26,6 @@ public interface Music extends Serializable {
      * @return the photo owner
      */
     String getOwner();
+
+
 }

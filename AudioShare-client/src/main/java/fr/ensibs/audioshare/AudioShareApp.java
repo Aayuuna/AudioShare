@@ -1,11 +1,14 @@
 package fr.ensibs.audioshare;
 
+import java.io.File;
+import java.util.List;
 import java.io.*;
 import java.util.Properties;
 import java.util.Scanner;
 import java.lang.Thread;
 
 import javazoom.jl.player.*;
+import java.util.Scanner;
 
 public class AudioShareApp {
 
@@ -101,7 +104,7 @@ public class AudioShareApp {
                                 //TODO: handle exception
                             }
                         }
-                        
+
                         public void stop(){
                             back.close();
                         }
@@ -110,18 +113,30 @@ public class AudioShareApp {
 
                 }
                     break;
-                
+
                 case "STOP":
                 case "stop":
                     player.stop();
                 break;
 
-                // case "like":
-                // case "LIKE":
-                //     break;
-                // case "dislike":
-                // case "DISLIKE":
-                //     break;
+                case "like":
+                case "LIKE":
+                    if (command.length >= 1) {
+                        File file = new File(this.user.getDirectory(), command[1]);
+                        like(file);
+                    } else {
+                        System.err.println("Usage: like <filename>");
+                    }
+                    break;
+                case "dislike":
+                case "DISLIKE":
+                    if (command.length >= 1) {
+                        File file = new File(this.user.getDirectory(), command[1]);
+                        dislike(file);
+                    } else {
+                        System.err.println("Usage: dislike <filename>");
+                    }
+                     break;
                 // case "share-d":
                 // case "SHARE-D":
                 //     break;
@@ -132,7 +147,7 @@ public class AudioShareApp {
                         Properties tags = parseTags(command, 2);
                         share(file, tags);
                     } else {
-                        System.err.println("Usage: share <filename> <tags>");
+                        System.err.println("Usage: share <filename> genre=<genre>");
                     }
                     break;
 
@@ -157,13 +172,13 @@ public class AudioShareApp {
     /**
      * Share a new photo
      *
-     * @param file the photo file in the local directory
-     * @param tags a list of tags that describe the photo
+     * @param file the music file in the local directory
+     * @param genre the genre that describe the music
      */
-    public void share(File file, Properties tags)
+    public void share(File file, Properties genre)
     {
         if (file.isFile()) {
-            Music music = new DefaultMusic(file, tags, this.user.getName());
+            Music music = new DefaultMusic(file, genre, this.user.getName());
             boolean success = this.user.share(music);
             if (success) {
                 System.out.println(music + " has been shared");
@@ -184,6 +199,14 @@ public class AudioShareApp {
         if (success) {
             System.out.println("Filter " + tags + " has been set");
         }
+    }
+
+    public void like(File file){
+        System.out.println(this.user.getName() + " liked the music : " + file + " ! :3");
+    }
+
+    public void dislike(File file){
+        System.out.println(this.user.getName() + " disliked the music : " + file + " ... :c");
     }
 
     /**

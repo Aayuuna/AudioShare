@@ -21,41 +21,42 @@ public class DefaultMusic implements Music {
      */
     private String owner;
 
+
+    private int likes = 0;
+
+    private int dislikes = 0;
+
     /**
      * Constructor
      *
-     * @param file the music binary file
-     * @param tags the music tags
+     * @param file  the music binary file
+     * @param tags  the music tags
      * @param owner the user that shared the music
      */
-    public DefaultMusic(File file, Properties tags, String owner)
-    {
+    public DefaultMusic(File file, Properties tags, String owner) {
         this.file = file;
         this.tags = tags;
         this.owner = owner;
     }
 
+
     @Override
-    public Properties getTags()
-    {
+    public Properties getTags() {
         return this.tags;
     }
 
     @Override
-    public File getFile()
-    {
+    public File getFile() {
         return this.file;
     }
 
     @Override
-    public String getOwner()
-    {
+    public String getOwner() {
         return this.owner;
     }
 
     @Override
-    public String toString()
-    {
+    public String toString() {
         return "{ music: file=" + file + ",owner=" + owner + ",tags=" + tags + " }";
     }
 

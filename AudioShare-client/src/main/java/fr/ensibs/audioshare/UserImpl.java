@@ -61,6 +61,7 @@ public class UserImpl implements User {
         return true;
     }
 
+
     private void loadUser(){
         File file = new File(this.dir, "user.bak");
         if (file.isFile()) {
